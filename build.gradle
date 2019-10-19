@@ -1,5 +1,7 @@
+
 plugins {
     id 'java'
+    id 'net.saliman.cobertura' version '2.6.0'
 }
 
 group 'org.codingdojo.kata'
@@ -13,4 +15,14 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    testRuntime "org.slf4j:slf4j-api:1.7.10"
 }
+
+cobertura {    
+    coverageFormats = ['html', 'xml']
+    coverageIgnoreTrivial = true
+    coverageIgnores = ['org.slf4j.Logger.*']
+    coverageReportDir = new File("$buildDir/reports/cobertura")
+}
+
+test.finalizedBy(project.tasks.cobertura)
