@@ -1,3 +1,4 @@
+
 # 练功房脚手架
 
 如果你恰好也用Java做练功房的练习，可以从这个脚手架开始入手。
@@ -21,3 +22,6 @@ BUILD SUCCESSFUL in 1s
 用Intellij IDEA或Eclipse或者你习惯的任何IDE（但是我强烈建议不要使用IDEA或Eclipse之外的其他IDE）导入工程，运行全部测试，你应该看到绿条。
 
 从这里开始你的Dojo练习。
+
+# tdd_kata
+
