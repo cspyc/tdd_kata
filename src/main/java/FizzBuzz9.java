@@ -1,5 +1,3 @@
-import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
-
 import java.util.ArrayList;
 import java.util.List;
 
