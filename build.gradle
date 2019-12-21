@@ -27,3 +27,8 @@ cobertura {
 }
 
 test.finalizedBy(project.tasks.cobertura)
+
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
