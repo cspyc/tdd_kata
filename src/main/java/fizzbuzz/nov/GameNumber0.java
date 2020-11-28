@@ -1,31 +1,32 @@
-package fizzbuzz.oct;
+package fizzbuzz.nov;
 
 /**
  * @author pi
- * @date 2020/10/19 10:49 PM
+ * @date 2020/11/04 11:58 PM
  **/
-public class GameNumber {
-    private int rawNumber;
+public class GameNumber0 {
 
-    public GameNumber(int rawNumber) {
+    private final int rawNumber;
+
+    public GameNumber0(int rawNumber) {
         this.rawNumber = rawNumber;
     }
 
     @Override
     public String toString() {
-        if (isRelated(3) && isRelated(5)) {
+        if (isRelatedTo(3) && isRelatedTo(5)) {
             return "FizzBuzz";
         }
-        if (isRelated(3)) {
+        if (isRelatedTo(3)) {
             return "Fizz";
         }
-        if (isRelated(5)) {
+        if (isRelatedTo(5)) {
             return "Buzz";
         }
         return String.valueOf(rawNumber);
     }
 
-    private boolean isRelated(int relatedNumber) {
+    private boolean isRelatedTo(int relatedNumber) {
         return rawNumber % relatedNumber == 0 || String.valueOf(rawNumber).contains(String.valueOf(relatedNumber));
     }
 }
